@@ -1,28 +1,22 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="sans-serif">
+    <MessagePost v-bind="message"></MessagePost>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MessagePost from './components/MessagePost.vue';
+import * as message from './assets/message.json';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MessagePost
+  },
+  data() {
+    return {
+      message: message.default
+    };
   }
-}
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

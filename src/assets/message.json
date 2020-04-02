@@ -1,0 +1,12 @@
+{
+  "name": "Brad",
+  "profile": "logo.png",
+  "isAuthor": true,
+  "timeStamp": "2020-04-02T03:40:50.773Z",
+  "message": "Vue does not support IE8 and below, because it uses ECMAScript 5 features that are un-shimmable in IE8.",
+  "counts": {
+    "replies": 123,
+    "likes": 234,
+    "dislikes": 123
+  }
+}
