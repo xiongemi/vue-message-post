@@ -4,7 +4,7 @@
     <section class="ml2">
       <header class="flex items-center">
         <div class="b">{{ name }}</div>
-        <div class="br-pill ml2 ph2 pv1 bg-dark-gray white f7">AUTHOR</div>
+        <div class="br-pill ml2 ph2 pv1 bg-dark-gray white f7" v-if="isAuthor">AUTHOR</div>
         <div class="ml2 f7 gray">• <timeago :datetime="timeStamp"></timeago></div>
       </header>
       <p>
@@ -32,6 +32,7 @@
 
 <script>
 import Button from './Button.vue';
+import '../services/timeago';
 
 export default {
   name: 'MessagePost',
